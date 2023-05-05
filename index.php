@@ -32,14 +32,14 @@ require_once __DIR__ . '/Database/db.php';
                         <span>prezzo: <?php echo $prodotto->prezzo; ?></span> <br />
                         <span>valutazione:<?php echo $prodotto->valutazione; ?></span><br />
                         
-                            <?php if($prodotto->tipoProdotto == 'giochi') {?>
+                            <?php if($prodotto->tipoProdotto == 'Giochi') {?>
                                 <span>fatto di <?php echo $prodotto->materiale; ?></span><br />
                                 <span>colore: <?php echo $prodotto->colore; ?></span>
-                            <?php }elseif($prodotto->tipoProdotto == 'cibo') {?>
+                            <?php }elseif($prodotto->tipoProdotto == 'Cibo') {?>
                                 <span>calorie: <?php echo $prodotto->calorie; ?></span><br />
                                 <span>Peso: <?php echo $prodotto->peso; ?></span> Kg<br />
                                 <span>Taglia del Cane:<?php echo $prodotto->tagliaCane; ?></span>
-                            <?php }elseif($prodotto->tipoProdotto == 'cucce') {?>
+                            <?php }elseif($prodotto->tipoProdotto == 'Cucce') {?>
                                 <span>Fatto di <?php echo $prodotto->materiale; ?></span><br />
                                 <span>Dimensioni: <?php echo $prodotto->dimensioni; ?></span>
                             <?php } ?>

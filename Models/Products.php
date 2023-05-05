@@ -15,13 +15,14 @@ class Products {
     public $valutazione;
 
 
-    public function __construct($tipoProdotto,$immagine,$nome,$prezzo,$valutazione,Categorie $categoria)
+    public function __construct($immagine,$nome,$prezzo,$valutazione,Categorie $categoria)
     {
-        $this->tipoProdotto=$tipoProdotto;
+        $this->tipoProdotto=get_class($this);
         $this->immagine=$immagine;
         $this->nome=$nome;
         $this->prezzo=$prezzo;
         $this->valutazione=$valutazione;
         $this->categoria=$categoria;
     }
+
 }
