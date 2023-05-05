@@ -7,10 +7,10 @@ class Cibo extends Products{
     public $tagliaCane;
 
 
-    public function __construct($immagine,$nome,$prezzo,$valutazione,$categoria,$calorie,$peso,$tagliaCane)
+    public function __construct($tipoProdotto,$immagine,$nome,$prezzo,$valutazione,$categoria,$calorie,$peso,$tagliaCane)
     {
 
-        parent::__construct($immagine,$nome,$prezzo,$valutazione,$categoria);
+        parent::__construct($tipoProdotto,$immagine,$nome,$prezzo,$valutazione,$categoria);
 
         $this->calorie=$calorie;
         $this->peso=$peso;

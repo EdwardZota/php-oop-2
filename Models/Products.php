@@ -7,6 +7,7 @@ require_once __DIR__ .'/Cucce.php';
 
 
 class Products {
+    public $tipoProdotto;
     public $immagine;
     public $nome;
     public $prezzo;
@@ -14,8 +15,9 @@ class Products {
     public $valutazione;
 
 
-    public function __construct($immagine,$nome,$prezzo,$valutazione,Categorie $categoria)
+    public function __construct($tipoProdotto,$immagine,$nome,$prezzo,$valutazione,Categorie $categoria)
     {
+        $this->tipoProdotto=$tipoProdotto;
         $this->immagine=$immagine;
         $this->nome=$nome;
         $this->prezzo=$prezzo;
