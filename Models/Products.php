@@ -25,4 +25,13 @@ class Products {
         $this->categoria=$categoria;
     }
 
+    public function changePrice($newPrice){
+        if(!is_float($newPrice) && !is_int($newPrice)){
+            throw new Exception('Il nuovo prezzo inserito non e valido');
+        }
+        
+        $this->prezzo = $newPrice;
+
+    }
+
 }

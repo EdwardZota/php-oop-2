@@ -38,7 +38,7 @@ require_once __DIR__ . '/Database/db.php';
                             <?php }elseif($prodotto->tipoProdotto == 'Cibo') {?>
                                 <span>calorie: <?php echo $prodotto->calorie; ?></span><br />
                                 <span>Peso: <?php echo $prodotto->peso; ?></span> Kg<br />
-                                <span>Taglia del Cane:<?php echo $prodotto->tagliaCane; ?></span>
+                                <span>Taglia dell'animale:<?php echo $prodotto->tagliaAnimale; ?></span>
                             <?php }elseif($prodotto->tipoProdotto == 'Cucce') {?>
                                 <span>Fatto di <?php echo $prodotto->materiale; ?></span><br />
                                 <span>Dimensioni: <?php echo $prodotto->dimensioni; ?></span>
